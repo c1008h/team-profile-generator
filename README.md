@@ -9,17 +9,11 @@ This NodeJS program allows users to quickly generate a professional README markd
 
 
 ## Table of Contents (Optional)
-- [Team Profile Generator](#team-profile-generator)
-  - [Description](#description)
-    - [Created with:](#created-with)
-  - [Table of Contents (Optional)](#table-of-contents-optional)
-  - [Instructions](#instructions)
-    - [Installation](#installation)
-    - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [License](#license)
-  - [Badges](#badges)
-  - [Contact](#contact)
+- [Instructions](#instructions)
+- [Contributions](#contributions)
+- [License](#license)
+- [Contact](#contact)
+
 
 ## Instructions
 ### Installation
@@ -46,3 +40,4 @@ Feel free to reach out if you have any questions.
 > Github: <a href='https://github.com/c1008h'>c1008h</a>
 > <br>
 > Email: <a href='mailto:hongchris97@gmail.com'>hongchris97@gmail.com</a>
+
