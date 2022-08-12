@@ -14,6 +14,7 @@ This NodeJS program allows users to quickly generate a professional README markd
 - [License](#license)
 - [Contact](#contact)
 
+
 ## Instructions
 ### Installation
 Use this command line to clone this repo before running the program:
@@ -39,3 +40,4 @@ Feel free to reach out if you have any questions.
 > Github: <a href='https://github.com/c1008h'>c1008h</a>
 > <br>
 > Email: <a href='mailto:hongchris97@gmail.com'>hongchris97@gmail.com</a>
+
