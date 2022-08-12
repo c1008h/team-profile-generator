@@ -1,4 +1,4 @@
-# team-profile-generator
+# Team Profile Generator
 
 ## Description
 This NodeJS program allows users to quickly generate a professional README markdown file based on the user's input.
@@ -9,10 +9,17 @@ This NodeJS program allows users to quickly generate a professional README markd
 
 
 ## Table of Contents (Optional)
-- [Instructions](#instructions)
-- [Contributions](#contributions)
-- [License](#license)
-- [Contact](#contact)
+- [Team Profile Generator](#team-profile-generator)
+  - [Description](#description)
+    - [Created with:](#created-with)
+  - [Table of Contents (Optional)](#table-of-contents-optional)
+  - [Instructions](#instructions)
+    - [Installation](#installation)
+    - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [License](#license)
+  - [Badges](#badges)
+  - [Contact](#contact)
 
 ## Instructions
 ### Installation
