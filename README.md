@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Description
-This NodeJS program allows users to quickly generate a professional README markdown file based on the user's input.
+This NodeJS program allows users to quickly generate a profiles for the work team.
 ### Created with:
 - <a href='https://javascript.info/'>JavaScript</a>
 - <a href='https://nodejs.org/en/'>Node JS</a>
