@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Description
-This NodeJS program allows users to quickly generate a profiles for the work team.
+This NodeJS application uses object-oriented programming to allow users to quickly generate profiles for the work team.
 ### Created with:
 - <a href='https://javascript.info/'>JavaScript</a>
 - <a href='https://nodejs.org/en/'>Node JS</a>
@@ -23,10 +23,10 @@ Use this command line to clone this repo before running the program:
 
 Open the repo in VSC then open the terminal to that file. Once in the terminal, run `npm init`. Once initualize is finished, run `npm i`. This should install all packages and dependencies that are needed for this app.
 ### Usage
-Type `node index.js` into the terminal to run this app. Once the app has started, user will be prompted with a handful of questions to answer. When the questionare is completely filled out, the README.md file will be updated with the user's input. From there, users can copy and paste into whatever README.md file they desire. 
+Type `node index.js` into the terminal to run this app. Once the app has started, user will be prompted with a handful of questions to answer. When the questionare is completely filled out, the employee list will be updated. Users will be prompted if they want to add more employees or exit out the application. From there, the information about the employees will be displayed onto the `index.html` file to be viewable on the web. 
 
 ## Contribution
-Feel free to fork my repo and use it as your README generator. 
+Feel free to fork my repo and use it to generate employee cards. 
 
 ## License
 
