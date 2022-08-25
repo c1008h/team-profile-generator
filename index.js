@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
-let employees = []
+const fs = require('fs')
+const generateHTML = require('./utils/generateHTML')
+let employees = [];
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -28,7 +30,6 @@ const promptUser = () => {
     .then((answers) => {
         console.log({name: answers.name, title: answers.title, id: answers.id, email: answers.email})
         let firstInput = {name: answers.name, title: answers.title, id: answers.id, email: answers.email}
-        let secondInput 
 
         if(answers.title == 'Engineer'){
             return inquirer.prompt([
@@ -39,9 +40,12 @@ const promptUser = () => {
                 }
             ])
             .then((answers) => {
-                console.log({name: answers.github})
-                // let partB = {name: answers.github}
-                secondInput.push({github: answers.github})
+                //console.log({name: answers.github})
+                firstInput.github = answers.github
+                //console.log(firstInput)
+                employees.push(firstInput);
+                //console.log(employees)
+                //generateHTML(employees);
             })
         }
         if(answers.title == 'Intern'){
@@ -53,8 +57,8 @@ const promptUser = () => {
                 }
             ])
             .then((answers) => {
-                console.log({name: answers.school})
-                firstInput.push({name: answers.school})
+                firstInput.school = answers.school
+                employees.push(firstInput);
             })
         }
         if(answers.title == 'Manager'){
@@ -66,31 +70,35 @@ const promptUser = () => {
                 }
             ])
             .then((answers) => {
-                console.log({name: answers.office})
-                firstInput.push({name: answers.office})
+                firstInput.office = answers.office
+                employees.push(firstInput);
             })
         }
     })
+    .then(() => {anotherUser()})
 }
 
-// const anotherUser = () => {
-//     return inquirer.prompt([
-//         {
-//             type:'confirm',
-//             message:'Would you like to add another employee?',
-//             name:'anotheremployee',
-//         }
-//     ])
-//     .then((data) => {
-//         if(data.anotheremployee == 'yes' || 'y') {
-//             promptUser()
-//         } 
-//         if(data.anotheremployee == 'no' || 'n') {
-//             console.log('Exit')
-//         }
-//         return
-//     })
-// }
+const anotherUser = () => {
+    return inquirer.prompt([
+        {
+            type:'confirm',
+            message:'Would you like to add another employee?',
+            name:'anotheremployee',
+        }
+    ])
+    .then((data) => {
+        if(data.anotheremployee) {
+            promptUser()
+        } 
+        else {
+            generateHTML(employees)
+            console.log('Exit')
+        }
+        return
+    })
+}
+const init = () => {
+    promptUser()
+}
 
-promptUser()
-// .then(() => {anotherUser()})
+init()
