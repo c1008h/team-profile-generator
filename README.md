@@ -1,4 +1,5 @@
 # Team Profile Generator
+![Screen Shot 2022-08-25 at 12 27 59 AM](https://user-images.githubusercontent.com/102135325/186603475-d6f96eea-33af-4e9d-8d66-8ce33d070428.png)
 
 ## Description
 This NodeJS application uses object-oriented programming to allow users to quickly generate profiles for the work team.
@@ -16,6 +17,8 @@ This NodeJS application uses object-oriented programming to allow users to quick
 
 
 ## Instructions
+![Team Profile Generator](https://user-images.githubusercontent.com/102135325/186603401-b353324b-94cd-47c5-8e61-293dce555fea.gif)
+
 ### Installation
 Use this command line to clone this repo before running the program:
 
