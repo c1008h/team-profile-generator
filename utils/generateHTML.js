@@ -28,12 +28,11 @@ const generateHTML = (employees) => {
         <div class="container" id="container">
             <div class="row" id="row">
                 <div class="row team-area col-12 d-flex justify-content-center" id="innerRow">
-    ${generateCard(employees)}
-    </div>
+                    ${generateCard(employees)}
+                </div>
+            </div>
         </div>
-    </div>
-    <script type="application/json" src="../db/db.json"></script>
-</body>
+    </body>
 </html>`
  fs.writeFile('./dist/index.html', html, (err) => {
      if (err) {
@@ -57,7 +56,7 @@ const generateCard = (employees) => {
             <ul class="list-group">
                 <li class="list-group-item">ID:${employees[i].id}</li>
                 <li class="list-group-item"> Email: <a href="${employees[i].email}">${employees[i].email}</a></li>
-                <li class="list-group-item">${(employees[i].title == 'Manager') ? employees[i].email: ''} ${(employees[i].title == 'Intern') ? employees[i].school: ''} ${(employees[i].title == 'Engineer') ? employees[i].github: ''}</li>
+                <li class="list-group-item">${(employees[i].title == 'Manager') ? 'Office: ' + employees[i].office: ''} ${(employees[i].title == 'Intern') ? 'School: ' + employees[i].school: ''} ${(employees[i].title == 'Engineer') ? 'Github: ' + employees[i].github: ''}</li>
             </ul>
         </div>
     </div>`
